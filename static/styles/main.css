@@ -1,0 +1,180 @@
+.nossos_pratos {
+    position: relative;
+    margin-top: 92px;
+    margin-left: 151px;
+}
+
+.nossos_pratos h2 {
+    position: relative;
+    color: #0D0D0D;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.grade {
+    margin-top: 52px;
+    margin-right: 265px;
+    margin-bottom: 72px;
+}
+
+
+.prato {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+
+.verso img {
+    width: auto;
+    height: 380px;
+    opacity: 70%;
+}
+
+.verso p {
+    position: absolute;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration:double;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    top: 103px;
+}
+
+.prato img {
+    width: auto;
+    height: 380px;
+}
+
+.prato h4 {
+    max-width: 250px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.flip-container {
+    width: auto;
+    height: 380px;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+	width: 100%;
+	height: 100%;
+    transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-container:hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.frente, .verso{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+}
+
+.verso {
+	transform: rotateY(180deg);
+}
+
+#switch:checked ~ .flip-container .flipper {
+    transform: rotateY(180deg);
+}
+
+#switch{
+	display: none;
+}
+
+
+.obj_lateral_01_tempero {
+    opacity: 0.8;
+    width: 389px;
+    mix-blend-mode: multiply;
+    position: absolute;
+    top: -350px;
+    right: 0px;
+    z-index: -1;
+}
+
+.obj_lateral_04_cebola {
+    position: absolute;
+    width: 707px;
+    height: 707px;
+    opacity: 0.7;
+    transform: rotate(8.487deg);
+    mix-blend-mode: multiply;
+    left: -331.65px;
+    top: 100px;
+    z-index: -1;
+}
+
+.obj_lateral_08_lentilha {
+    position: absolute;
+    height: 547px;
+    right: 0px;
+    top: 600px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.obj_lateral_05_tomate {
+    position: absolute;
+    height: 738px;
+    top: 1535px;
+    right: 0px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.obj_lateral_03_alho {
+    position: absolute;
+    width: auto;
+    height: 690px;
+    top: 2480px;
+    left: -400px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.obj_lateral_07_salsa {
+    position: absolute;
+    height: 850px;
+    top: 983px;
+    left: -150px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.obj_lateral_02_gengibre {
+    position: absolute;
+    height: 553px;
+    top: 2535px;
+    right: 0px;
+    opacity: 0.8;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+@media screen and (max-width: 450px) {
+    .nossos_pratos {
+        margin-left: 50px;
+        margin-right: 0;
+    }
+    .prato img {
+        height: 250px;
+        margin-left: 30px;
+    }
+    
+}

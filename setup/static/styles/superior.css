@@ -1,0 +1,84 @@
+{% load static %}
+.cabecalho {
+    margin: 0;
+    margin-bottom: 250px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px;
+}
+
+.cabecalho img {
+    position: absolute;
+    width: auto;
+    top: 0;
+    left: 0;     
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.cabecalho a {
+    color: #0D0D0D;
+    font-size: 25px;
+}
+
+.cabecalho a:hover {
+    color: #731717;    
+}
+
+.menu_nav {
+    margin-top: 30px;
+}
+
+.icon-car {    
+    padding-left: 10px;
+    padding-right: 100px;
+    background-size: 22px;
+    background: url({% static '/assets/favicon/carrinho-de-compras-icon.png' %}) no-repeat left center;
+}
+
+.icon-perfil {    
+    padding-left: 10px;
+    padding-right: 100px;
+    background-size: 22px;
+    background: url({% static '/assets/favicon/perfil-icon.png' %}) no-repeat left center;
+}
+
+.icon-lupa {
+    padding-left: 10px;
+    padding-right: 25px;
+    background-size: 22px;
+    background: url({% static '/assets/favicon/lupa.png' %}) no-repeat left center;
+}
+
+/* .acesso_rapido_grade{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background: rgba(88, 22, 22, 0.60);
+} */
+
+/* .acesso_rapido {
+    background: rgba(88, 22, 22, 0.60);
+    padding: 45px 0;
+} */
+
+@media screen and (max-width: 450px) {
+    .logo img {
+        max-width: 450px;                     
+    }
+
+    .menu_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo img {
+        max-width: 800px;                     
+    }
+
+    .menu_nav {
+        display: none;
+    }
+}
+
